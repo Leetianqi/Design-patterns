@@ -24,36 +24,6 @@ public class WeatherData extends Observable {
     //维护一个之前的温度,用来判断是否setChanged()
     private float oldTemp;
 
-//    //内部类--组装了数据,了解一下内部类;看看这个怎么实现
-//    static class Data{
-//
-//        private float temp;
-//
-//        private float humidity;
-//
-//        public Data() {
-//            this.temp = temp;
-//            this.humidity = humidity;
-//        }
-//
-//        public float getTemp() {
-//            return temp;
-//        }
-//
-//        public void setTemp(float temp) {
-//            this.temp = temp;
-//        }
-//
-//        public float getHumidity() {
-//            return humidity;
-//        }
-//
-//        public void setHumidity(float humidity) {
-//            this.humidity = humidity;
-//        }
-//    }
-
-
     //当数据发生改变时,唤醒观察者
     public void measurementChanged() {
         //可以在这个setChanged()时,做条件限制;
