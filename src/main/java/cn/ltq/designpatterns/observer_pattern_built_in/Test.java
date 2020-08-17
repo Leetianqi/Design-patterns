@@ -13,7 +13,9 @@ public class Test {
         //建立一个对象,以便观察者发现要注册的主题
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
-        weatherData.setMeasurements(80,65,30.4f);
-        weatherData.setMeasurements(83,70,29.2f);
+        StatiticsDisplay statiticsDisplay = new StatiticsDisplay(weatherData);
+
+        weatherData.setMeasurements(80, 65, 30.4f);
+        weatherData.setMeasurements(83, 70, 29.2f);
     }
 }

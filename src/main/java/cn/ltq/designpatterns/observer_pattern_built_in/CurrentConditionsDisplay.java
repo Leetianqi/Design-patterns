@@ -20,6 +20,7 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement {
     private float humidity;
 //    //观察者拥有被观察者实例,以便注册,删除使用;
 //    private Subject weatherData;
+
     //现在是Observable
     Observable observable;
 
@@ -50,5 +51,30 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement {
             }
             display();
         }
+    }
+
+    //通过getter setter方法获取observable对象
+    public float getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(float temperature) {
+        this.temperature = temperature;
+    }
+
+    public float getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(float humidity) {
+        this.humidity = humidity;
+    }
+
+    public Observable getObservable() {
+        return observable;
+    }
+
+    public void setObservable(Observable observable) {
+        this.observable = observable;
     }
 }
